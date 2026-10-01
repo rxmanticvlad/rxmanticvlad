@@ -412,7 +412,7 @@ function genKey() {
 
   const rand = Math.random().toString(36).slice(2, 10).toUpperCase();
   const prefix = plan === 'life' ? 'LIFE' : plan === '3d' ? 'D3' : 'D2';
-  const key = `ADITYA-${prefix}-${user.slice(0,6).toUpperCase()}-${rand}`;
+  const key = `ANSH-${prefix}-${user.slice(0,6).toUpperCase()}-${rand}`;
 
   const fullUrl = `${window.location.origin}/api/number/${key}?number=${encodeURIComponent(number)}`;
 
